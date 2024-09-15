@@ -1,0 +1,172 @@
+ [
+    {
+        "owner": {
+            "firstName": "John",
+            "lastName": "Doe",
+            "email": "john.doe@example.com",
+            "mobile": "+94771234567"
+        },
+        "graden": {
+            "gardenName": "Green Leaf Farms",
+            "description": "A family-run organic farm providing fresh fruits and vegetables."
+        },
+        "gradenAddress": {
+            "address": "123 Farm Road",
+            "postalCode": "20000",
+            "cityId": 15
+        }
+    },
+    {
+        "owner": {
+            "firstName": "Emily",
+            "lastName": "Smith",
+            "email": "emily.smith@example.com",
+            "mobile": "+94774567890"
+        },
+        "graden": {
+            "gardenName": "Sunrise Orchard",
+            "description": "Organic fruits grown with care and love."
+        },
+        "gradenAddress": {
+            "address": "456 Orchard Lane",
+            "postalCode": "30000",
+            "cityId": 12
+        }
+    },
+    {
+        "owner": {
+            "firstName": "Michael",
+            "lastName": "Johnson",
+            "email": "michael.johnson@example.com",
+            "mobile": "+94779998888"
+        },
+        "graden": {
+            "gardenName": "Herb Haven",
+            "description": "Offering a wide variety of fresh, organic herbs."
+        },
+        "gradenAddress": {
+            "address": "789 Green Street",
+            "postalCode": "40000",
+            "cityId": 10
+        }
+    },
+    {
+        "owner": {
+            "firstName": "Olivia",
+            "lastName": "Brown",
+            "email": "olivia.brown@example.com",
+            "mobile": "+94772345678"
+        },
+        "graden": {
+            "gardenName": "Healthy Harvest",
+            "description": "Providing the best organic vegetables."
+        },
+        "gradenAddress": {
+            "address": "101 Healthy Ave",
+            "postalCode": "25000",
+            "cityId": 8
+        }
+    },
+    {
+        "owner": {
+            "firstName": "James",
+            "lastName": "Davis",
+            "email": "james.davis@example.com",
+            "mobile": "+94779876543"
+        },
+        "graden": {
+            "gardenName": "The Farmstead",
+            "description": "Family-owned farm with fresh produce every day."
+        },
+        "gradenAddress": {
+            "address": "112 Farmstead Drive",
+            "postalCode": "35000",
+            "cityId": 22
+        }
+    },
+    {
+        "owner": {
+            "firstName": "Sophia",
+            "lastName": "Wilson",
+            "email": "sophia.wilson@example.com",
+            "mobile": "+94775678901"
+        },
+        "graden": {
+            "gardenName": "Sunny Fields",
+            "description": "Organic farming with a passion for the environment."
+        },
+        "gradenAddress": {
+            "address": "202 Sunny Street",
+            "postalCode": "18000",
+            "cityId": 25
+        }
+    },
+    {
+        "owner": {
+            "firstName": "Liam",
+            "lastName": "Martinez",
+            "email": "liam.martinez@example.com",
+            "mobile": "+94774561234"
+        },
+        "graden": {
+            "gardenName": "Green Pastures",
+            "description": "Sustainable organic farming, fresh daily."
+        },
+        "gradenAddress": {
+            "address": "303 Green Pasture Way",
+            "postalCode": "45000",
+            "cityId": 3
+        }
+    },
+    {
+        "owner": {
+            "firstName": "Isabella",
+            "lastName": "Anderson",
+            "email": "isabella.anderson@example.com",
+            "mobile": "+94773216543"
+        },
+        "graden": {
+            "gardenName": "Nature's Gift",
+            "description": "Fresh produce directly from our family farm."
+        },
+        "gradenAddress": {
+            "address": "404 Nature Lane",
+            "postalCode": "55000",
+            "cityId": 5
+        }
+    },
+    {
+        "owner": {
+            "firstName": "Noah",
+            "lastName": "Garcia",
+            "email": "noah.garcia@example.com",
+            "mobile": "+94774509876"
+        },
+        "graden": {
+            "gardenName": "Earthly Delights",
+            "description": "Organic fruits and vegetables for a healthy life."
+        },
+        "gradenAddress": {
+            "address": "505 Earth Road",
+            "postalCode": "60000",
+            "cityId": 7
+        }
+    },
+    {
+        "owner": {
+            "firstName": "Mia",
+            "lastName": "Thomas",
+            "email": "mia.thomas@example.com",
+            "mobile": "+94773219876"
+        },
+        "graden": {
+            "gardenName": "Farm Fresh Organics",
+            "description": "A trusted source for organic, fresh farm produce."
+        },
+        "gradenAddress": {
+            "address": "606 Fresh Avenue",
+            "postalCode": "70000",
+            "cityId": 9
+        }
+    }
+]

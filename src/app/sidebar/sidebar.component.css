@@ -1,0 +1,23 @@
+.mat-primary {
+  color: #323232;
+}
+
+.active {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.activepoint {
+  background-color: #C0EE3C;
+}
+
+.active-o-div{
+    
+}
+
+
+.activediv{
+    background-color: #ebebeb;
+}
+
+

@@ -1,0 +1,125 @@
+<section class="bg-[#ffffff] w-full h-screen  flex flex-col  box-border p-[20px] gap-[10px]  overflow-scroll">
+    <div class=" w-full box-border p-[20px] bg-white flex flex-col border rounded-[10px]">
+        <div class=" w-full flex flex-row">
+            <span class=" text-[20px]">Add Item</span>
+        </div>
+    </div>
+
+    <div class=" w-full box-border p-[30px] bg-white flex flex-col border rounded-[10px]">
+
+        <div class="flex flex-row mobile:flex-col w-full justify-between  gap-[10px]">
+            <div class=" w-full flex flex-col ">
+                <mat-form-field class="w-full">
+                    <mat-label>Item title</mat-label>
+                    <input matInput placeholder="Ex. Carrot" value="" #title>
+                </mat-form-field>
+            </div>
+
+            <div class=" w-full flex flex-col">
+                <mat-form-field floatLabel="always" class=" w-full">
+                    <mat-label>Price</mat-label>
+                    <input matInput type="number" class="example-right-align" placeholder="0" #price />
+                    <span matTextPrefix>&#x20A8;</span>
+                    <span matTextSuffix>.00</span>
+                </mat-form-field>
+            </div>
+
+            <div class=" w-full flex flex-col ">
+                <mat-form-field floatLabel="always" class=" w-full">
+                    <mat-label>Quantity</mat-label>
+                    <input matInput type="number" class="example-right-align" placeholder="0" #qty />
+                </mat-form-field>
+            </div>
+
+        </div>
+
+        <div class="flex flex-row mobile:flex-col w-full justify-between gap-[10px] ">
+            <div class=" w-full flex flex-col ">
+                <mat-form-field>
+                    <mat-label>Select Category</mat-label>
+                    <mat-select>
+                        <mat-option (onSelectionChange)="selectedCategory = category.id"
+                            *ngFor="let category of categoryList" [value]="category.id">{{category.name}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+
+            <div class=" w-full flex flex-col ">
+                <mat-form-field>
+                    <mat-label>Select Measuring Type</mat-label>
+                    <mat-select>
+                        <mat-option (onSelectionChange)="selectedType = kg.value" value="KG" #kg>Kg</mat-option>
+                        <mat-option (onSelectionChange)="selectedType = g.value" value="G" #g>g</mat-option>
+                        <mat-option (onSelectionChange)="selectedType = l.value" value="L" #l>L</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="w-full  flex flex-col gap-[10px]">
+            <span>Freshness (Days)</span>
+            <div class=" w-full grid grid-cols-10 mobile:grid-cols-3 gap-[5px]">
+                <div (click)="addFresh(freshness)" *ngFor="let freshness of getFreshnessList()"
+                    [ngClass]="getSelectedFreshness().id==freshness.id?'flex cursor-pointer flex-row justify-center items-center rounded-[100px] box-border h-[50px] w-[50px] bg-[#52ffb1] border-[2px] border-[#000]' : 
+                'flex flex-row justify-center items-center rounded-[100px] box-border cursor-pointer  h-[50px] w-[50px] bg-[#ABFF52] border-[2px] border-[#000]'">
+                    <span>{{freshness.name}}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-row w-full justify-between mt-[10px] ">
+            <div class=" w-full flex flex-col ">
+                <mat-form-field class="w-full">
+                    <mat-label>Discription</mat-label>
+                    <textarea matInput placeholder="Discription" #discription></textarea>
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class=" flex flex-row w-full mt-[10px] ">
+            <div>
+                <button type="button"
+                    class="h-[40px] mobile:w-full box-border pl-[24px]  pr-[24px] bg-[#ABFF52] border-[2px] border-[#000] rounded-[20px]"
+                    (click)="filePicker.click()">Pick
+                    Image</button>
+                <input type="file" #filePicker (change)="onImagePiked($event)" />
+            </div>
+        </div>
+
+        <div class="flex flex-row justify-center w-full mt-[10px] mb-[10px]">
+            <div
+                class="h-[10rem] border-[2px] w-[10rem]  flex flex-row items-center justify-center box-border p-[20px]  border-[#000]">
+                @if (
+                imageUrl !==''
+                ) {
+                <img [src]="imageUrl">
+                }
+
+
+                @if (
+                imageUrl ==''
+                ) {
+                <span class="text-[50px]">🍆</span>
+                }
+
+            </div>
+        </div>
+
+        <div class="flex w-full  justify-end">
+            <button
+                class="h-[40px] mobile:w-full box-border pl-[24px] hover:bg-[#1f1f1f] pr-[24px] text-white rounded-[20px] bg-[#000000]"
+                (click)="addItem(title.value,price.value,qty.value,discription.value)">Save</button>
+        </div>
+
+
+
+    </div>
+
+
+</section>
+
+
+
+
+

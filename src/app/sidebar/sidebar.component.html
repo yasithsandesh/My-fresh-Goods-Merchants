@@ -1,0 +1,62 @@
+<aside class="bg-[#ffffff] w-full flex flex-col  h-screen justify-between ">
+
+    <div>
+        <div class=" flex flex-row w-full gap-[12px] justify-center p-[20px] box-border border-b hover:bg-[#ebebeb] duration-150" routerLink="/">
+            <div class=" flex flex-row w-1/5 justify-center items-center">
+                <mat-icon fontIcon="dashboard" color="primary"></mat-icon>
+            </div>
+            <div class=" flex flex-row w-4/5 justify-start items-center gap-[5px]">
+                <label class="text-[20] text-[#323232] ">DashBoard</label>
+                <div class="w-[20px] h-[20px] rounded-full bg-transparent"></div>
+            </div>
+        </div>
+
+        <div class=" flex flex-row w-full gap-[12px] justify-center p-[20px] box-border border-b hover:bg-[#ebebeb] duration-150 "
+            routerLink="/customer" routerLinkActive="activediv">
+            <div class=" flex flex-row w-1/5 justify-center items-center">
+                <mat-icon fontIcon="group" color="primary"></mat-icon>
+            </div>
+            <div class=" flex flex-row w-4/5 justify-start items-center gap-[5px]">
+                <label class="text-[20] text-[#323232] " routerLinkActive="active">Customers</label>
+                <div class="w-[20px] h-[20px] rounded-full bg-transparent" routerLinkActive="activepoint"></div>
+            </div>
+        </div>
+
+
+        <div class=" flex flex-row w-full gap-[12px] justify-center p-[20px] box-border border-b hover:bg-[#ebebeb] duration-150" routerLinkActive="activediv">
+            <div class=" flex flex-row w-1/5 justify-center items-center">
+                <mat-icon fontIcon="inventory_2" color="primary"></mat-icon>
+            </div>
+            <div class=" flex flex-row w-4/5 justify-start items-center gap-[5px] active-o-div" routerLink="/dashboard/item">
+                
+                <label class="text-[20] text-[#323232] " routerLinkActive="active">Item</label>
+                <div class="w-[20px] h-[20px] rounded-full bg-transparent" routerLinkActive="activepoint"></div>
+            </div>
+        </div>
+
+        <div class=" flex flex-row w-full gap-[12px] justify-center p-[20px] box-border border-b hover:bg-[#ebebeb] duration-150" routerLinkActive="activediv">
+            <div class=" flex flex-row w-1/5 justify-center items-center">
+                <mat-icon fontIcon="category" color="primary"></mat-icon>
+            </div>
+            <div class=" flex flex-row w-4/5 justify-start items-center gap-[5px]" routerLink="/orders">
+                <label class="text-[20] text-[#323232] " routerLinkActive="active">Orders</label>
+                <div class="w-[20px] h-[20px] rounded-full bg-transparent" routerLinkActive="activepoint"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class=" flex flex-row w-full gap-[12px] justify-center p-[20px] box-border  border-t   hover:bg-[#ebebeb] duration-150" routerLinkActive="activediv">
+        <div class=" flex flex-row w-1/5 justify-center items-center">
+            <mat-icon fontIcon="logout" color="primary"></mat-icon>
+        </div>
+        <div class=" flex flex-row w-4/5 justify-start items-center">
+            <label class="text-[20] text-[#323232]">LogOut</label>
+        </div>
+    </div>
+
+
+
+
+</aside>
